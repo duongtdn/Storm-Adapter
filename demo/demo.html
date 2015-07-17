@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+     
+		<script type="text/javascript" src="fabric.js"></script>
+        <script type="text/javascript" src="../src/storm-adapter.js"></script>
+		<script type="text/javascript" src="../src/canvas-class.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+
+			<canvas id = 'storm-canvas' style="margin-top:15px; border: solid 1px grey;"></canvas>
+		
+		
+		</div>
+		
+		<script>
+		
+			window.onload = function(){
+			
+				var canvas = new Storm.Canvas({
+					width : 800,
+					height : 500
+				});
+				
+				canvas.add(new fabric.Rect({
+					left : 50,
+					top : 50,
+					width : 50,
+					height : 50,
+					fill : 'yellow'
+				}));				
+			
+			};
+		
+		
+		</script>
+
+    </body>
+
+
+</html>
